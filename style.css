@@ -31,6 +31,7 @@ box-shadow: 0 3px 5px -3px #000;
    position: relative;
    list-style: none;
    color: black;
+   cursor: pointer;
    
  }
  a::after{
@@ -59,6 +60,7 @@ box-shadow: 0 3px 5px -3px #000;
  }
  .logins>div:hover{
    color: black;
+   cursor: pointer;
  }
  .header>div{
    justify-content: center;
@@ -124,6 +126,7 @@ box-shadow: 0 3px 5px -3px #000;
    margin: 5px;
    justify-content: stretch;
    position: relative;
+   cursor: pointer;
  }
  img{
   object-fit:cover;
@@ -214,4 +217,9 @@ box-shadow: 0 3px 5px -3px #000;
    font-size: large;
    height: 2rem;
    margin-bottom: 1rem;
+   cursor: pointer;
+   padding-left: 10px;
+ }
+ .a1>div{
+   padding-bottom: 10px;
  }
