@@ -1,53 +1,217 @@
 
 .container{
     display: grid;
-    grid-template-rows: 1fr 10fr 3fr;
+    grid-template-rows: 1fr 10fr 4fr;
+    font-family: 'Ubuntu', sans-serif;
+   
 }
  .header{
-    min-height: 100px;
-    border: 1px solid gray;
+    max-height: 100px;
+    border-bottom: 1px solid gray;
     display: grid;
+    
+    -webkit-box-shadow: 0 3px 5px -3px #000;
+-moz-box-shadow: 0 3px 5px -3px #000;
+box-shadow: 0 3px 5px -3px #000;
     grid-template-columns: 1fr 3fr 1fr;
  }
+ 
+ .headings{
+   
+   display: grid;
+   font-size: larger;
+   font-weight: bolder;
+   padding-bottom: 1em;
+   justify-items: center;
+   align-content: center;
+   grid-template-columns: repeat(5,1fr);
+   
+ }
+ a{
+   position: relative;
+   list-style: none;
+   color: black;
+   
+ }
+ a::after{
+   content: "";
+   position: absolute;
+   
+   bottom: 0;
+   left: 0;
+   height: 3px;
+   width: 100%;
+   background-color: #ee6352;
+   transform: scale(0);
+   transition: transform 250ms ease-in;
+ }
+ a:hover::after{
+   transform: scale(1);
+ }
+ .logins{
+   font-size: medium;
+   color:  grey;
+   justify-items: center;
+   align-content: center;
+   margin-bottom: 1em;
+   display: grid;
+   grid-template-columns: 4fr 1fr 1fr 1fr;
+ }
+ .logins>div:hover{
+   color: black;
+ }
  .header>div{
-    border: 1px solid gray;
+   justify-content: center;
+   align-items: center;
+   padding-top: 1rem;
  }
- .main{
-    border: 1px solid gray;
-    display: grid;
-    grid-template-rows: 2fr 1fr;
- }
- .main>div{
-    border: 1px solid gray; 
+ .brand,.name{
+   font-family: 'Inspiration', cursive;
+   font-size: 2.3rem;
+   font-weight: bolder;
  }
  
+ .main{
+    
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    color: rgba(0,0,0,0);
+    font-weight: bold;
+    
+ }
+ .left{
+   font-size: large;
+   
+ }
+
+ 
  .one{
-    border: 1px solid gray;
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
  }
+ .two{
+   color: rgb(46, 44, 44);
+   display: flex;
+   flex-direction: column;
+   padding-left: 20%;
+   padding-right: 20%;
+   font-size: large;
+   justify-content: center;
+   align-items: center;
+ }
+ 
  .right{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    border: 1px solid gray;
+   
  }
- .right>div{
-    border: 1px solid gray;
- }
-
- .footer{
-    border: 1px solid gray; 
+  .footer{
+   
     display: grid;
     grid-template-rows: 4fr 1fr;
+    color: rgb(56, 55, 55);
  }
- .footer>div{
-    border: 1px solid gray;
- }
+ 
  .footer_top{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
  }
- .footer_top>div{
-    border: 1px solid gray;
+
+ .image{
+   display: flex;
+   margin: 5px;
+   justify-content: stretch;
+   position: relative;
+ }
+ img{
+  object-fit:cover;
+  
+  max-width: 100%;
+  max-height: 100%;
+  
+ }
+ .left .caption{
+   
+   margin:19px;
+ }
+ .caption{
+   display: flex;
+   margin:10px;
+   position: absolute;
+   inset: 0;
+   padding-left: 15%;
+   padding-right: 15%;
+   justify-content: center;
+   align-items: center;
+   word-wrap: break-word;
+   background-color: rgba(0,0,0,0);
+ }
+ .caption:hover{
+   background-color: rgba(0,0,0,.9);
+   color: white;
+  
+ }
+ .footer_bottom{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: rgb(56, 55, 55);
+
+ }
+ .a{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ .a>div{
+   padding-left: 20%;
+   padding-right: 20%;
+   padding-bottom: 10px;
+ }
+ .payment{
+   display: flex;
+   justify-content: space-between;
+
+ }
+ .pic{
+   max-height: 50px;
+   max-width: 50px;
+   border-radius: 50%;
+   margin-left: 20px;
+   
+ }
+ .b,.c{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+ }
+ h2{
+   color: black;
+   margin-right: 10%;
+ }
+ .f1{
+   display: flex;
+   justify-content: space-between;
+ }
+ .f1>*{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   
+ }
+ .big{
+   max-width: 35px;
+   max-height: 35px;
+   border-radius: 50%;
+ }
+ input{
+   border-radius: 5px;
+   font-size: large;
+   height: 2rem;
+   margin-bottom: 1rem;
  }
